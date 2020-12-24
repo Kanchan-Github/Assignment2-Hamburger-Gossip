@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Gossip</title>
+    <link rel="stylesheet" type="text/css" href="css/hamburger.css">
+
+</head>
+<body>
+    <form action="" id="main_form">
+        <h1>Write opinions about this hamburger</h1>
+        <img src="hamburger.jpeg" alt="hamburger">
+        <h4>Enter your review:</h4>
+        <textarea id="entry" name="entry_form"></textarea>
+        <button>Save review</button>
+    </form>
+
+    <div class="reviews">
+        <h4>Reviews from other:</h4>
+        <ul id="review_list">
+        </ul>
+    </div>
+
+
+    <div>
+        <a href="#" onlcick="listAll()">Show Posts</a>
+        <a href="#" onclick="">Sort Posts By</a>
+        <select id="sortParam">
+            <option value="date">Event Date</option>
+            <option value="voters">Event Voters</option>
+        </select>
+
+    </div>
+    <div id="mainContainer"></div>
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+    /* box-sizing lets us choose whether
+    width includes padding or not.
+    border-box includes padding in the width
+    and generally makes more sense than the
+    default of content-box */
+    box-sizing: border-box;
+}
+
+/* the html and div elements may have margins,
+so disable those automatically */
+html,
+div {
+    margin: 0;
+}
+
+/* but specify an explicit margin on the body element
+to centre it */
+body {
+    margin: 1em;
+    font-family: sans-serif;
+
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Set the width of the form and textarea to
+fill their respective parents */
+form,
+textarea {
+    width: 100%;
+    padding: 9px;
+}
+
+/* Set img elements to fill their parents width.
+By only specifying a width or height, the image
+will keep the right aspect ratio when it scales */
+img {
+    width: 100%;
+}
+
+/* Centre headings */
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting an element to "block" means it will be
+in a vertical position by itself. This allows centring using
+margin: 0 auto
+(where 0 is vertical margin, and auto is horizontal)
+*/
+button {
+    padding: 9px;
+    display: block;
+    margin: 0 auto;
+}
+
+.reviews {
+    min-width: 200px;
+    max-width: 600px;
+}
+
+.reviews ul {
+    list-style: none;
+    text-indent: 0;
+    margin: 0; padding: 0;
+    
+}
+
+.reviews li {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #999;
+}
